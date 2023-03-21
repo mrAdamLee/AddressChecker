@@ -35,3 +35,9 @@ pry: for debugging
 To run the test suite, run the following command in your terminal:
 
 ``` rspec check_address_spec.rb ```
+
+## Thought Process
+The task was pretty straight forward, read in data from the csv, then check the address against the third party api. 
+I figured do it in batches to save on api calls and the api supported it, since I had a relatively small data set I didn't
+set a specific batch size though if this were scaled up at all we would want to specifiy a batch size. I used rspec for testing
+since that is what I'm most familiar with.
